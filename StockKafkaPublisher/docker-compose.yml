@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  elasticsearch:
+    container_name: stock_kafka_producer
+    image: stock_kafka_producer
+    volumes:
+      - /mnt/disk1/hungvv/docker/java_process/kakfa_publisher/conf:/usr/local/service/conf
+      - /mnt/disk1/hungvv/docker/java_process/kakfa_publisher/data:/usr/local/service/data
+    networks:
+      - elastic
+networks:
+  elastic:
+    driver: bridge

@@ -1,0 +1,4 @@
+StockKafkaPublisher/target
+StockSparkStreamingScala/target
+StockKafkaPublisher/.idea
+StockSparkStreamingScala/.idea
